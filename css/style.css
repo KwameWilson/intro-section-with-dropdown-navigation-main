@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     background-color: #FAFAFA;
     font-family: Epilogue;
@@ -27,4 +31,52 @@ body {
 .nav-item {
     color: #686868;
     font-weight: 500;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 165px;
+    align-items: center;
+    padding: 0px 130px 130px 165px;
+}
+
+h1 {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -1.111px;
+    margin-bottom: 48px;
+}
+
+h5 {
+    color: #686868;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 155.556% */
+    margin-bottom: 51px;
+}
+
+.image-hero {
+    width: 480px;
+}
+
+.hero-btn {
+    color: #FAFAFA;
+    background-color: #151515;
+    border-radius: 15px;git
+    text-decoration: none;
+    padding: 15px 30px;
+    width: 163px;
+    height: 56px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 155.556% */
+    letter-spacing: -0.25px;
+    margin-bottom: 116px;
 }
