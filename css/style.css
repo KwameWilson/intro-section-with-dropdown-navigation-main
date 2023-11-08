@@ -15,28 +15,40 @@ body {
     font-family: Epilogue;
 }
 
-.nav {
+nav {
     padding: 32px 40px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 71px;
 }
 
 
-.nav-left,
-.nav-right {
+nav div:first-child {
     display: flex;
     gap: 40px;
-}
-
-.nav-item {
     color: #686868;
     font-weight: 500;
 }
 
+nav div:nth-child(2) a {
+    color: #686868;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+nav div:nth-child(2) a:last-child {
+    margin-left: 40px;
+    border: 1.5px solid #686868;
+    padding: 12px 22px;
+    border-radius: 14px;
+}
+
+
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 165px;
+    gap: 125px;
     align-items: center;
     padding: 0px 130px 130px 165px;
 }
@@ -60,14 +72,16 @@ h5 {
     margin-bottom: 51px;
 }
 
-.image-hero {
+main .image-hero {
     width: 480px;
 }
 
-.hero-btn {
+
+main div:first-child a {
     color: #FAFAFA;
     background-color: #151515;
-    border-radius: 15px;git
+    border-radius: 15px;
+    display: block;
     text-decoration: none;
     padding: 15px 30px;
     width: 163px;
@@ -79,4 +93,16 @@ h5 {
     /* 155.556% */
     letter-spacing: -0.25px;
     margin-bottom: 116px;
+}
+
+
+
+
+main div>div span {
+    margin-right: 40px;
+    display: inline-block;
+}
+
+main div>div span:last-child {
+    margin-right: 0;
 }
